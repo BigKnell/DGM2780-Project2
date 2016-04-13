@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 8, ../scss/partials/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, ../scss/partials/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, ../scss/partials/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, ../scss/partials/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, ../scss/partials/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../scss/partials/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../scss/partials/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, ../scss/partials/general-styles.scss */
+html, body, * {
+  box-sizing: border-box;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* line 7, ../scss/partials/general-styles.scss */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: orange;
+}
+@media (max-width: 768px) {
+  /* line 7, ../scss/partials/general-styles.scss */
+  .wrapper {
+    background: blue;
+  }
+}
+@media (max-width: 480px) {
+  /* line 7, ../scss/partials/general-styles.scss */
+  .wrapper {
+    background: yellow;
+  }
+}
+
+/* line 3, ../scss/partials/_header.scss */
+.header {
+  margin-bottom: 20px;
+}
+/* line 27, ../scss/partials/_mixins.scss */
+.header:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+/* line 7, ../scss/partials/_header.scss */
+.header h1 {
+  float: left;
+  font-size: 40px;
+}
+/* line 12, ../scss/partials/_header.scss */
+.header nav {
+  float: right;
+}
+/* line 15, ../scss/partials/_header.scss */
+.header nav li {
+  float: left;
+  padding: 10px;
+}
+/* line 20, ../scss/partials/_header.scss */
+.header nav li span {
+  padding-left: 10px;
+}
+/* line 24, ../scss/partials/_header.scss */
+.header nav li a {
+  color: black;
+  text-decoration: none;
+}
+/* line 28, ../scss/partials/_header.scss */
+.header nav li a:hover {
+  color: red;
+}
+
+/* line 6, ../scss/pages/_home-page.scss */
+#home-page .hero-banner {
+  width: 940px;
+  height: 240px;
+  background: transparent url(../img/book-shelf.jpg) no-repeat 0 0;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}

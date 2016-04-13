@@ -1,0 +1,20 @@
+// General Styles
+html, body, * {
+	box-sizing: border-box;
+	font-family: $font-stack;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 30px;
+	background: orange;
+
+	@include breakpoint(tablet) {
+		background: blue;
+	}
+
+	@include breakpoint(phone) {
+		background: yellow;
+	}
+}
